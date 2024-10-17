@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна Сторінка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELGR,ELSH@100..900,1..2,0..16&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newfolder/fonts.css">
+    <link rel="stylesheet" href="newfolder2/fonts.css">
+    <link rel="stylesheet" href="newfolder4/fonts/css/line-awesome.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #navigation {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        #navigation button {
+            margin: 0 5px;
+            padding: 5px 10px;
+        }
+        .page {
+            display: none;
+            padding: 20px;
+        }
+        .page.active {
+            display: block;
+        }
+       
+        #page1 {
+            font-family: Blos, sans-serif;
+            font-size: 30px;
+        }
+        #page1 h1 {
+            font-family: "Metallic";
+            font-size: 100px;
+        }
+        #page1 h2 {
+            font-family: "Blos";
+            font-size: 100px;
+        }
+       
+        #page2 {
+            font-family: "Handjet", sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+        }
+        #page2 h1 {
+            font-family: "Handjet", sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            color: rgb(255, 159, 179);
+        }
+        #page2 h2 {
+            font-family: "Montserrat Alternates", sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            color: rgb(255, 159, 179);
+        }
+        #page2 h3 {
+            font-family: "Metallic";
+            font-size: 50px;
+            font-weight: 600;
+            color: rgb(255, 159, 179);
+        }
+       
+        #page3 .text1 {
+            text-shadow: 5px -5px 20px;
+            font-size: 34px;
+            text-decoration: slateblue;
+            text-decoration: underline;
+        }
+        #page3 h1 {
+            text-align: center;
+            background-color: hotpink;
+            display: block;
+            width: 30%;
+            margin: auto;
+            border-radius: 20px;
+            border: 3px dashed rgb(101, 33, 67);
+            box-shadow: 4px -4px 40px royalblue;
+        }
+       
+        #page4 .icon-block {
+            text-align: center;
+            font-size: 100px;
+            color: hotpink;
+        }
+        #page4 .icon-block i {
+            font-size: 100px;
+            color: hotpink;
+            text-shadow: 0 0 20px rgb(245, 205, 230);
+            padding: 10px;
+            border-radius: 100%;
+            background-color: rgb(171, 171, 171);
+            margin: 10px;
+            box-shadow: 0 0 20px rgb(216, 91, 169);
+            transition: all 0.3s ease;
+        }
+        #page4 .icon-block i:hover {
+            color: hotpink;
+            text-shadow: 0 0 20px rgb(245, 205, 230);
+            background-color: rgb(211, 211, 211);
+            box-shadow: 0 0 29px rgb(216, 91, 169);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <button onclick="showPage(1)">Сторінка 1</button>
+        <button onclick="showPage(2)">Сторінка 2</button>
+        <button onclick="showPage(3)">Сторінка 3</button>
+        <button onclick="showPage(4)">Сторінка 4</button>
+    </div>
+
+    <div id="page1" class="page active">
+        <h1>Робота зі шрифтами</h1> 
+        <h2>Підготовка шрифтів </h2> 
+        <h3>Види шрифтів</h3>
+        <h4>Підготовка шрифтів</h4>
+        <p>Шрифт є одним із важливих елементів дизайну документа, який може підсилити чи навпаки зменшити ефективність донесення інформації до користувача. 
+           Важко переоцінити значення шрифту в оформленні тексту, будь то веб-сторінка чи журнальна стаття. 
+           Вірно підібраний шрифт полегшує сприйняття i додає сторінці свого неповторного стилю.</p>
+        
+    </div>
+
+    <div id="page2" class="page">
+        <h1>Колекція шрифтів Google Font</h1>
+        <p>Google створив онлайн сервіс, де можна вибрати нестандартний шрифт для сайту (кількість доступних онлайн шрифтів постійно збільшується і 
+        серед них багато кириличних).</p>
+        
+    </div>
+
+    <div id="page3" class="page">
+        <h1>Колекція шрифтів Google Font</h1>
+        <p><ins>Google</ins> <mark>створив <strong>онлайн <i>сервіс</i></mark>,</strong> де можна вибрати <b>нестандартний шрифт</b> для сайту <em>(кількість доступних онлайн шрифтів постійно збільшується і 
+        серед них багато кириличних)</em>.</p>
+       
+    </div>
+
+    <div id="page4" class="page">
+        <h1>Іконковий шрифт Line Awesome</h1>
+        <div class="icon-block">
+            <a href="https://icons8.ru/line-awesome"><i class="las la-cat"></i></a>
+            <a href="https://www.victoria.lviv.ua/library/students/wd/work5.html"><i class="las la-radiation"></i></a>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageNumber) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById('page' + pageNumber).classList.add('active');
+        }
+
+     
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight') {
+                let currentPage = document.querySelector('.page.active');
+                let nextPage = currentPage.nextElementSibling;
+                if (nextPage && nextPage.classList.contains('page')) {
+                    showPage(Array.from(currentPage.parentNode.children).indexOf(nextPage) + 1);
+                }
+            } else if (event.key === 'ArrowLeft') {
+                let currentPage = document.querySelector('.page.active');
+                let previousPage = currentPage.previousElementSibling;
+                if (previousPage && previousPage.classList.contains('page')) {
+                    showPage(Array.from(currentPage.parentNode.children).indexOf(previousPage) + 1);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
